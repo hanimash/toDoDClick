@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu|Hi+Melody');
+*, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+body{
+    width: 100vw;
+    height: 90vh;
+    background: rgb(54, 53, 53) url('./bg1.jpeg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+main {
+    width: 100%;
+    margin: 200px auto 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+main#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#container>div{
+    width: 500px;
+    background: rgba(8, 2, 2, 0.2);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.inputTask{
+    width: 100%;
+    line-height: 40px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-bottom: 5px;
+    color: #fff;
+    text-shadow: 1px 2px 10px #000;
+    font-family: 'Gaegu', cursive;
+}
+.tasksList , .doneTasksList{
+    display: block;
+    width: 100%;
+}
+.tasksList{
+    margin-bottom: 10px;
+}
+.item{
+    margin: 3px;
+    background: #eee;
+    height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Hi Melody', cursive;
+    font-size: 20px;
+    padding-right: 8px;
+}
+.item>p{
+    width: 75%;
+    margin-left: 5px;
+    color: #233a52;
+    color: #233a52;
+}
+.item>div{
+    height: 100%;
+    width: 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.grayState{
+    background: rgb(78, 78, 78);
+}
+.greenState{
+    background: rgb(28, 121, 74);
+
+}
