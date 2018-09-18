@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=800, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="greeting"><span id="user"></span><a href="#" id="editLink">Edit</a></h1><h1 id="clock"></h1>
+    </header>
+    <main>
+        <div id="my-div">
+            <button id="stopClockBtn" class="mainBtn">open start-Stop Clock</button>
+            <button id="calcBtn" class="mainBtn">Calculator</button>
+        </div>
+        <div id="stopClockBox" class="win">
+            <div id="headBox" class="winHead"><h1>Start-Stop Clock</h1><a href="#" id="closeClockBoxLink">X</a></div>
+            <p><span id="h">00</span>:<span id="m">00</span>:<span id="s">00</span>:<span id="ms">00</span></p>
+            <button id="startStopBtn">start</button>
+            <button id="resetBtn">reset</button>
+        </div>
+        <div id="calcBox" class="win">
+            <div id="headCalcBox" class="winHead"><h1>Calculator</h1><a href="#" id="closecalcBoxLink">X</a></div>
+            <div class="mainSec">
+                <div id="viewer" class="viewer">0</div>
+                <button class="num" data-num="7">7</button>
+                <button class="num" data-num="8">8</button>
+                <button class="num" data-num="9">9</button>
+                <button data-ops="plus" class="ops">+</button>
+
+                <button class="num" data-num="4">4</button>
+                <button class="num" data-num="5">5</button>
+                <button class="num" data-num="6">6</button>
+                <button data-ops="minus" class="ops">-</button>
+
+                <button class="num" data-num="1">1</button>
+                <button class="num" data-num="2">2</button>
+                <button class="num" data-num="3">3</button>
+                <button data-ops="times" class="ops">*</button>
+
+                <button class="num" data-num="0">0</button>
+                <button class="num" data-num=".">.</button>
+                <button id="equals" class="ops">=</button>
+                <button data-ops="divided by" class="ops">/</button>
+
+                <button id="clear" class="clear" data-result="">C</button>
+                <button id="allClear" class="allClear" data-result="">AC</button>
+                <button data-ops="Modulus" class="ops">MOD</button>
+                <button data-ops="Percentage" class="ops">%</button>
+
+
+            </div><!-- class: .mainSec -->
+        </div><!-- id: calcBox -->
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
